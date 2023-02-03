@@ -93,7 +93,7 @@ initializeJars <- function() {
         cli::cli_progress_update()
         j <- j + 1
     }
-    cli::cli_alert_success("Downloaded {nrow(md)} jar files.")
+    cli::cli_alert_success("Downloaded {nrow(md)}/{nrow(md)} jar files.")
 }
 
 

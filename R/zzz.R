@@ -18,14 +18,14 @@
             "  * Once finished, please reload the BLJars package."
         )
     } else {
-        tasselMain <- rJava::J("net/maizegenetics/tassel/TASSELMainFrame")
+        tasselVersions <- rJava::.jnew("net/maizegenetics/tassel/TasselVersions")
 
         msg <- paste0(
             "BLJars package successfully loaded:", "\n",
             "  * BLJars version....... ", utils::packageVersion("BLJars"), "\n",
-            "  * PHG version.......... ", NULL, "\n",
-            "  * TASSEL version....... ", tasselMain$version, "\n",
-            "  * Build date........... ", tasselMain$versionDate, "\n"
+            "  * PHG version.......... ", tasselVersions$phgVersion(), "\n",
+            "  * TASSEL version....... ", tasselVersions$tasselVersion(), "\n",
+            "  * Build date........... ", tasselVersions$tasselVersionDate(), "\n"
         )
 
     }
