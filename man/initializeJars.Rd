@@ -2,7 +2,7 @@
 % Please edit documentation in R/initializer.R
 \name{initializeJars}
 \alias{initializeJars}
-\title{Initialize \code{BLJars}.}
+\title{Initialize \code{MGJars}.}
 \usage{
 initializeJars()
 }

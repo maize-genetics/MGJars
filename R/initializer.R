@@ -58,7 +58,7 @@ getCommitMetaData <- function(
 
 
 ## ----
-#' @title Initialize \code{BLJars}.
+#' @title Initialize \code{MGJars}.
 #'
 #' @description Download jar files to designated directory
 #'

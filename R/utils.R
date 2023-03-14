@@ -9,7 +9,7 @@ getDirFields <- function(pkg = "MGJars", sep = "/") {
     pkgDir   <- find.package(pkg)
     javaDir  <- "java/"
     metaDir  <- "extdata/"
-    metaFile <- "bljars_metadata.csv"
+    metaFile <- "mgjars_metadata.csv"
 
     return(
         list(

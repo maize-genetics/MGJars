@@ -10,7 +10,7 @@ experimental branches of `rTASSEL` and `rPHG`. In order to use this, the
 user will need to manually initialize:
 
 ```
-library(BLJars)
+library(MGJars)
 ```
 
 ...and then load `rTASSEL` and/or `rPHG`:

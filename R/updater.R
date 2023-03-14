@@ -9,11 +9,11 @@
 #' @export
 updateJars <- function(test = TRUE) {
 
-    paths <- BLJars:::getDirFields()
+    paths <- getDirFields()
     blVersions <- rJava::.jnew("net/maizegenetics/tassel/TasselVersions")
 
     if (test) {
-        metaDf <- read.csv("/home/btmonier/Temporary/test_rtassel/bljars_metadata_old.csv")
+        metaDf <- read.csv("/home/btmonier/Temporary/test_rtassel/mgjars_metadata_old.csv")
     } else {
         metaDf <- read.csv(metaPath)
     }

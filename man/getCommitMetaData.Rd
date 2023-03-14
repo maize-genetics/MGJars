@@ -5,8 +5,8 @@
 \title{Get TASSEL standalone JAR metadata}
 \usage{
 getCommitMetaData(
- 
-    apiPath = "https://api.bitbucket.org/2.0/repositories/tasseladmin/tassel-5-standalone/src/master/",
+  apiPath =
+    "https://api.bitbucket.org/2.0/repositories/tasseladmin/tassel-5-standalone/src/master/",
   pageLen = 100
 )
 }
