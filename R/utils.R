@@ -1,4 +1,11 @@
-getDirFields <- function(pkg = "BLJars", sep = "/") {
+# === Utilities =====================================================
+
+## ----
+#' @title Get directory fields for installed package
+#' 
+#' @param pkg Package name
+#' @param sep Directory separator character
+getDirFields <- function(pkg = "MGJars", sep = "/") {
     pkgDir   <- find.package(pkg)
     javaDir  <- "java/"
     metaDir  <- "extdata/"
