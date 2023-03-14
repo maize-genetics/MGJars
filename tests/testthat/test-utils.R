@@ -9,6 +9,7 @@ test_that("Enum() returns correct data and exceptions", {
     
     expect_equal(length(CONSTANTS), 3)
     expect_equal(CONSTANTS$THRESHOLD, 10)
+    expect_equal(CONSTANTS$PATH_A, "path_to_a")
     expect_error(Enum(LETTERS))
     expect_error(CONSTANTS$PATH_A <- 2)
 })
