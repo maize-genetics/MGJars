@@ -25,19 +25,17 @@ getDirFields <- function(pkg = "MGJars", sep = "/") {
 
 
 ## ----
-#' @title Create Enum collections
+#' @title Create Enum collections and lock bindings
 #' 
-#' @param ... Lists of elements to add to \code{Enum} instance
-Enum <- function(...) {
+#' @param l List of elements to add to \code{Enum} instance
+Enum <- function(l) {
+    stopifnot(is.list(l))
     
-    values <- sapply(match.call(expand.dots = TRUE)[-1L], deparse)
+    res <- as.environment(l)
     
-    stopifnot(identical(unique(values), values))
-    
-    res <- setNames(seq_along(values), values)
-    res <- as.environment(as.list(res))
     lockEnvironment(res, bindings = TRUE)
-    res
+    
+    return(res)
 }
 
 
